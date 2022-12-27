@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Plannner</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Requests</string>
+    <string name="title_profile">Profile</string>
+    <string name="label_old_password">Old Password</string>
+    <string name="label_new_password">New Password</string>
+    <string name="text_change_password">Change Password</string>
+    <string name="text_username">Username</string>
+    <string name="text_update">Update</string>
+    <string name="title_accounts">Accounts</string>
+    <string name="text_select_period">Select Period</string>
+    <string name="text_from">From</string>
+    <string name="text_to">To</string>
+    <string name="text_start_date">Start Date</string>
+    <string name="text_end_date">End Date</string>
+    <string name="text_name">Name</string>
+    <string name="text_sent_to">Sent To</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_host">Host</string>
+    <string name="text_between">Between</string>
+    <string name="text_and">And</string>
+    <string name="text_accepted">Accepted</string>
+    <string name="text_pending">Pending</string>
+    <string name="text_accept">Accept</string>
+</resources>
