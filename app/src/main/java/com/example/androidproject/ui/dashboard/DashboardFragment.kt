@@ -1,5 +1,6 @@
 package com.example.androidproject.ui.dashboard
 
+import User
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -14,7 +15,6 @@ import com.example.androidproject.MainActivity
 import com.example.androidproject.R
 import com.example.androidproject.databinding.FragmentDashboardBinding
 import com.example.androidproject.entities.Event
-import com.example.androidproject.entities.User
 import java.util.Date
 
 class DashboardFragment : Fragment() {
