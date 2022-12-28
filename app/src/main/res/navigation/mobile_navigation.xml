@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
+    android:label="Add Account"
     app:startDestination="@+id/navigation_home">
 
     <fragment
@@ -19,20 +20,32 @@
 
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.example.androidproject.ui.notifications.ProfileFragment"
+        android:name="com.example.androidproject.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
-        tools:layout="@layout/fragment_profile" >
+        tools:layout="@layout/fragment_profile">
         <action
             android:id="@+id/action_navigation_profile_to_update_profile"
             app:destination="@id/update_profile" />
+        <action
+            android:id="@+id/action_navigation_profile_to_add_account"
+            app:destination="@id/add_account" />
     </fragment>
     <fragment
         android:id="@+id/update_profile"
         android:name="com.example.androidproject.update_profile"
-        android:label="fragment_update_profile"
-        tools:layout="@layout/fragment_update_profile" >
+        android:label="Update Profile"
+        tools:layout="@layout/fragment_update_profile">
         <action
             android:id="@+id/action_update_profile_to_navigation_profile"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+    <fragment
+        android:id="@+id/add_account"
+        android:name="com.example.androidproject.add_account"
+        android:label="fragment_add_account"
+        tools:layout="@layout/fragment_add_account">
+        <action
+            android:id="@+id/action_add_account_to_navigation_profile"
             app:destination="@id/navigation_profile" />
     </fragment>
 </navigation>
