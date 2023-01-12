@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.androidproject.R
@@ -27,11 +28,19 @@ class ProfileFragment : Fragment() {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
+        val toUpdateProfileButton: Button = root.findViewById(R.id.button_update_profile)
+
         val floatingAddButton: FloatingActionButton = root.findViewById(R.id.profile_floating_add_button)
 
         floatingAddButton.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_profile_to_add_account)
         }
+
+        toUpdateProfileButton.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_profile_to_update_profile)
+        }
+
+
 
         return root
     }

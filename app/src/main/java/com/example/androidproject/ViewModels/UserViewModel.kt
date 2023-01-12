@@ -4,6 +4,7 @@ import User
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.example.androidproject.Data.UserDatabase
 import com.example.androidproject.Data.UserRepository
@@ -11,7 +12,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
 class UserViewModel(application: Application) : AndroidViewModel(application){
-    private val allUsers: LiveData<List<User>>
+    public val allUsers: LiveData<List<User>>
     private val repository: UserRepository
 
     init {
@@ -25,4 +26,5 @@ class UserViewModel(application: Application) : AndroidViewModel(application){
             repository.addUser(user)
         }
     }
+
 }

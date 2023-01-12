@@ -32,7 +32,7 @@
     </fragment>
     <fragment
         android:id="@+id/update_profile"
-        android:name="com.example.androidproject.update_profile"
+        android:name="com.example.androidproject.ui.profile.UpdateProfileFragment"
         android:label="Update Profile"
         tools:layout="@layout/fragment_update_profile">
         <action
@@ -41,7 +41,7 @@
     </fragment>
     <fragment
         android:id="@+id/add_account"
-        android:name="com.example.androidproject.add_account"
+        android:name="com.example.androidproject.ui.profile.AddAccountFragment"
         android:label="fragment_add_account"
         tools:layout="@layout/fragment_add_account">
         <action

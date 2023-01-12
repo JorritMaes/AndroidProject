@@ -1,26 +1,21 @@
-package com.example.androidproject
+package com.example.androidproject.ui.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.androidproject.R
 
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-class add_account : Fragment() {
+class UpdateProfileFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view =  inflater.inflate(R.layout.fragment_add_account, container, false)
-
-
-        return view
+        return inflater.inflate(R.layout.fragment_update_profile, container, false)
     }
-
 
 }

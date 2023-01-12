@@ -5,13 +5,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".add_account">
+    tools:context=".ui.profile.AddAccountFragment">
 
 
     <RadioGroup
         android:id="@+id/radioGroupTypeAccount"
-        android:layout_width="123dp"
-        android:layout_height="81dp"
+        android:layout_width="125dp"
+        android:layout_height="99dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="64dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,10 +25,11 @@
             android:text="@string/text_microsoft" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/radio_Google"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:checked="true"
             android:text="@string/text_google" />
     </RadioGroup>
 
@@ -45,24 +46,13 @@
     <EditText
         android:id="@+id/input_email_Account"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:layout_marginStart="56dp"
         android:ems="10"
         android:hint="@string/text_email"
         android:inputType="textPersonName"
         app:layout_constraintBaseline_toBaselineOf="@+id/label_email_account"
         app:layout_constraintStart_toEndOf="@+id/label_email_account" />
-
-    <EditText
-        android:id="@+id/input_password_account"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:ems="10"
-        android:hint="@string/text_password"
-        android:inputType="textPassword"
-        app:layout_constraintBaseline_toBaselineOf="@+id/label_password_account"
-        app:layout_constraintStart_toEndOf="@+id/label_password_account" />
 
     <TextView
         android:id="@+id/label_password_account"
@@ -73,5 +63,26 @@
         android:text="@string/text_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/label_email_account" />
+
+    <Button
+        android:id="@+id/button_add_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:text="@string/text_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_password_account" />
+
+    <EditText
+        android:id="@+id/input_password_account"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        app:layout_constraintBaseline_toBaselineOf="@+id/label_password_account"
+        app:layout_constraintStart_toEndOf="@+id/label_password_account" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

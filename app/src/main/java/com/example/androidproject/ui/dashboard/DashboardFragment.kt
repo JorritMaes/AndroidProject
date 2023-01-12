@@ -81,7 +81,7 @@ class DashboardFragment : Fragment() {
             )
 
         for (i in temp_title.indices){
-            accReqList.add(Event( Date(),Date(),temp_title[i], User(temp_hosts[i])))
+            accReqList.add(Event(0, Date(),Date(),temp_title[i], User(0,temp_hosts[i])))
         }
 
         accReqRecycleView =root.findViewById(R.id.dashboard_recycleviewer_requests_accepted)

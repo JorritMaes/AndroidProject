@@ -1,5 +1,13 @@
 package com.example.androidproject.entities
 
-data class Account(var Service: Service, var name: String){
+import User
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName ="Accounts")
+data class Account(var Service: Service,
+                   @PrimaryKey
+                   var name: String, var userId: Int){
+
 
 }
